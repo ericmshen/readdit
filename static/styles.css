@@ -1,0 +1,97 @@
+body {
+    background-color: white;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32pt;
+    color: #ff3314;
+    font-family: 'BentonSans', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+h4 {
+    text-align: center;
+    font-size: 12pt;
+    color: #555;
+    font-family: verdana, sans-serif;
+}
+
+.input {
+    text-align: center;
+    margin: auto;
+}
+
+.display {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: #ff3314;
+}
+
+button {
+    background-color: #ff3314;
+    padding: 4px 12px 4px 12px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    margin: 8px;
+    border-radius: 5px;
+    border-width: 0;
+}
+
+table {
+    font-family: verdana;
+    margin: auto;
+    text-align: center;
+    max-width: 60%;
+    border-collapse: collapse;
+    border: none;
+}
+
+tr:nth-child(even) {
+    background: #EEE;
+}
+
+td {
+    font-size: 12px;
+    padding: 12px 28px;
+    color: #777;
+    max-width: 40%;
+}
+
+.horizontal {
+    text-align: left;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+a:link {
+    color: #777;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:visited {
+    color: #BBB;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #ff3314;
+    transition: 0.2s;
+}
+
+.clear {
+    margin-top: 30px;
+}

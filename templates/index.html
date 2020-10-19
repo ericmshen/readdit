@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Readdit</title>
+        <link href="./static/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>readdit</h1>
+            <h4>what's trending on Reddit?</h4>
+            <div class="input">
+                <form action="/search" method="post">
+                    <input class="form" name="subreddit" placeholder="subreddit name..." type="text">
+                    <select class="form" name="timeperiod" placeholder="time period">
+                        <option>top posts right now</option>
+                        <option>top posts today</option>
+                        <option>top posts this week</option>
+                        <option>top posts this month</option>
+                        <option>top posts this year</option>
+                        <option>top posts of all time</option>
+                    </select>
+                    <button type="submit">find popular posts</button>
+                </form>
+            </div>
+            {% if displayresults %}
+            <div class="display">
+                <h4>{{timetext}} on <span style="color: #ff3314">r/{{subname}}</span></h4>
+                <table>
+                    {% for post in posts %}
+                    <tr>
+                        <td class="horizontal">
+                            <b>{{ post["title"] }}</b>
+                        </td>
+                        <td><a href="{{ post["link"] }}" target="_blank">(link)</a></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <div class="clear">
+                    <a href="/"><button type="submit">clear</button></a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </body>
+</html>
