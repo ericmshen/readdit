@@ -1,2 +1,7 @@
 # readdit
-reddit web scraping
+
+A basic Reddit scraping tool that displays the top posts in a selected time period in a given subreddit, using Flask and BeautifulSoup. For HCS Workshop 2.
+
+<img src="https://imgur.com/a/LhcLF9p" width="400">
+
+Potential future modifications: add statistics (upvotes, dates) to query results.
